@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace Rocky.Models
 {
-    public class Category
+    public class ApplicationType
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+
         public string Name { get; set; }
-        [Required]
-        [Range(1,int.MaxValue,ErrorMessage = "Dispay order must be greater than 0")]
-        [DisplayName("Display Order")]
-        public int DisplayOrder { get; set; }
     }
 }
